@@ -1,0 +1,231 @@
+{
+  "declare": "module",
+  "contents": [
+    {
+      "declare": "type",
+      "name": "$FUNCSIG$i"
+    },
+    {
+      "declare": "type",
+      "name": "$FUNCSIG$v"
+    },
+    {
+      "declare": "type",
+      "name": "$FUNCSIG$vi"
+    },
+    {
+      "declare": "import",
+      "type": "env",
+      "notimplemented": true,
+      "name": "$_ZN6neodev13smartcontract9framework8services3neo7Storage14CurrentContextINS_36_emit_syscall_Neo_Storage_GetContextEEENS3_14StorageContextEv",
+      "cppdemangle": {
+        "name": "neodev::smartcontract::framework::services::neo::Storage::CurrentContext",
+        "rtype": "neodev::smartcontract::framework::services::neo::StorageContext",
+        "templates": [
+          "neodev::_emit_syscall_Neo_Storage_GetContext"
+        ],
+        "params": []
+      }
+    },
+    {
+      "declare": "import",
+      "type": "env",
+      "notimplemented": true,
+      "name": "$_ZN6neodev13smartcontract9framework8services3neo7Storage3PutINS_29_emit_syscall_Neo_Storage_PutEEEvNS3_14StorageContextENS_7abitype6StringES9_",
+      "cppdemangle": {
+        "name": "neodev::smartcontract::framework::services::neo::Storage::Put",
+        "rtype": "void",
+        "templates": [
+          "neodev::_emit_syscall_Neo_Storage_Put"
+        ],
+        "params": [
+          "neodev::smartcontract::framework::services::neo::StorageContext",
+          "neodev::abitype::String",
+          "neodev::abitype::String"
+        ]
+      }
+    },
+    {
+      "declare": "import",
+      "type": "env",
+      "notimplemented": true,
+      "name": "$_ZN6neodev6vmtype5Array4InitEv",
+      "cppdemangle": {
+        "name": "neodev::vmtype::Array::Init",
+        "rtype": "",
+        "params": []
+      }
+    },
+    {
+      "declare": "import",
+      "type": "env",
+      "notimplemented": true,
+      "name": "$_ZN6neodev7abitype3StrINS_7_noemitEEENS0_6StringEPKc",
+      "cppdemangle": {
+        "name": "neodev::abitype::Str",
+        "rtype": "neodev::abitype::String",
+        "templates": [
+          "neodev::_noemit"
+        ],
+        "params": [
+          "char",
+          "const*"
+        ]
+      }
+    },
+    {
+      "declare": "import",
+      "type": "env",
+      "notimplemented": true,
+      "name": "$_ZN6neodev7abitype6String4InitEv",
+      "cppdemangle": {
+        "name": "neodev::abitype::String::Init",
+        "rtype": "",
+        "params": []
+      }
+    },
+    {
+      "declare": "table",
+      "notimplemented": true
+    },
+    {
+      "declare": "memory",
+      "notimplemented": true
+    },
+    {
+      "declare": "data",
+      "field": {
+        "name": "(i32.const",
+        "params": [
+          "16"
+        ]
+      },
+      "value": "0x48656c6c6f00"
+    },
+    {
+      "declare": "data",
+      "field": {
+        "name": "(i32.const",
+        "params": [
+          "32"
+        ]
+      },
+      "value": "0x576f726c6400"
+    },
+    {
+      "declare": "export",
+      "sname": "memory",
+      "func": "$0"
+    },
+    {
+      "declare": "export",
+      "sname": "main",
+      "func": "$main"
+    },
+    {
+      "declare": "func",
+      "name": "$main",
+      "cppdemangle": {
+        "name": "main",
+        "rtype": "",
+        "params": []
+      },
+      "params": [
+        {
+          "name": "(result",
+          "params": [
+            "i32"
+          ]
+        }
+      ],
+      "commands": [
+        {
+          "cmd": "(drop",
+          "deps": [
+            {
+              "cmd": "(call",
+              "params": [
+                "$_ZN6neodev7abitype6String4InitEv"
+              ]
+            }
+          ]
+        },
+        {
+          "cmd": "(drop",
+          "deps": [
+            {
+              "cmd": "(call",
+              "params": [
+                "$_ZN6neodev6vmtype5Array4InitEv"
+              ]
+            }
+          ]
+        },
+        {
+          "cmd": "(call",
+          "params": [
+            "$_ZN11NeoContract4mainIN6neodev13smartcontract9framework15emit_entrypointEEEvNS1_7abitype6StringENS1_6vmtype5ArrayE"
+          ]
+        },
+        {
+          "cmd": "(i32.const",
+          "params": [
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "declare": "func",
+      "name": "$_ZN11NeoContract4mainIN6neodev13smartcontract9framework15emit_entrypointEEEvNS1_7abitype6StringENS1_6vmtype5ArrayE",
+      "cppdemangle": {
+        "name": "NeoContract::main",
+        "rtype": "void",
+        "templates": [
+          "neodev::smartcontract::framework::emit_entrypoint"
+        ],
+        "params": [
+          "neodev::abitype::String",
+          "neodev::vmtype::Array"
+        ]
+      },
+      "params": [],
+      "commands": [
+        {
+          "cmd": "(call",
+          "params": [
+            "$_ZN6neodev13smartcontract9framework8services3neo7Storage14CurrentContextINS_36_emit_syscall_Neo_Storage_GetContextEEENS3_14StorageContextEv"
+          ]
+        },
+        {
+          "cmd": "(call",
+          "deps": [
+            {
+              "cmd": "(i32.const",
+              "params": [
+                "16"
+              ]
+            }
+          ]
+        },
+        {
+          "cmd": "(call",
+          "deps": [
+            {
+              "cmd": "(i32.const",
+              "params": [
+                "32"
+              ]
+            }
+          ]
+        },
+        {
+          "cmd": "(call",
+          "params": [
+            "$_ZN6neodev13smartcontract9framework8services3neo7Storage3PutINS_29_emit_syscall_Neo_Storage_PutEEEvNS3_14StorageContextENS_7abitype6StringES9_"
+          ]
+        }
+      ]
+    }
+  ]
+}

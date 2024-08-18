@@ -1,0 +1,15 @@
+[submodule "clang-llvm/clang"]
+	path = clang-llvm/clang
+	url = git@github.com:llvm-mirror/clang.git
+[submodule "clang-llvm/llvm"]
+	path = clang-llvm/llvm
+	url = git@github.com:llvm-mirror/llvm.git
+[submodule "binaryen"]
+	path = binaryen
+	url = git@github.com:WebAssembly/binaryen.git
+[submodule "wabt"]
+	path = wabt
+	url = https://github.com/WebAssembly/wabt
+[submodule "wabt-new"]
+	path = wabt-new
+	url = https://github.com/WebAssembly/wabt
